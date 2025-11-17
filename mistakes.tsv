@@ -1,6 +1,6 @@
 query	target_category	predicted_category
-Need to install outlet near my roof vent	electrical	electrical
-Water heater electrical connection is sparking	electrical	electrical
-Skylight leaking water into bathroom	roofing	roofing
-Electrician damaged my pipes, need repair	plumbing	plumbing
-Gutter downspout clogged	roofing	roofing
+Hi. Melissa came by and clogged my roof. Can you take a look at my sink?	roofing	plumbing
+Hi there. This is Jack. I’m looking for someone to install a new rubber roof faucet with LEDs. Call me back, thanks.	plumbing	roofing
+Can you replace a metal GFCI boiler?	plumbing	electrical
+Is wire breaker or waterfall metal cheaper	roofing	electrical
+Can you replace roof pipes with lead brick sauter?	plumbing	roofing

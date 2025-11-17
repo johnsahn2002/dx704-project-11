@@ -1,0 +1,55 @@
+You are a home services dispatcher. Classify the following homeowner request into exactly ONE category: 'electrical', 'plumbing', or 'roofing'.
+
+CATEGORY DEFINITIONS:
+
+ELECTRICAL - Any work involving:
+- Electrical wiring, outlets, switches, circuit breakers
+- Light fixtures, ceiling fans, lighting installations
+- Electrical panels, fuse boxes, circuit issues
+- Power supply problems, voltage issues, sparking
+- Appliance electrical connections (even if appliance seems plumbing-related)
+- HVAC electrical components, thermostats
+- Electrical components of water heaters, pumps, or other equipment
+- Ground wires, bonding, electrical safety
+- Smart home wiring, low voltage systems
+- Attic fans, exhaust fan electrical issues
+
+PLUMBING - Any work involving:
+- Pipes, drains, water supply, sewage
+- Faucets, sinks, toilets, showers, bathtubs
+- Water heaters (when issue is water-related, not electrical)
+- Boilers, water pressure, leaks from plumbing fixtures
+- Garbage disposals, dishwasher plumbing connections
+- Sump pumps (when issue is pump mechanism or water flow, not electrical)
+- Clogged drains, sewage smells, water quality
+- Pipe repairs, replacements, leaks from plumbing
+- Water damage from plumbing failures (not roof leaks)
+- Bidets, water filtration systems
+
+ROOFING - Any work involving:
+- Roof surface, shingles, tiles, metal roofing materials
+- Roof structure, leaks from roof penetrations
+- Gutters, downspouts, roof drainage
+- Skylights, roof vents, chimney flashing
+- Roof damage from weather, trees, animals
+- Roof inspections, estimates, replacements
+- Attic leaks from roof (not plumbing)
+- Roof-mounted equipment issues (solar panels on roof, etc.)
+- Soffit, fascia, roof trim
+- Any exterior penetration through the roof surface
+
+DECISION RULES:
+1. Focus on the PRIMARY ISSUE, not just keywords
+2. If request mentions electrical malfunction (sparking, breaker tripping, not working), classify as ELECTRICAL even if equipment serves other purposes
+3. Roof vents, dryer vents on roof, or any roof penetrations = ROOFING
+4. Water leaking from ABOVE (ceiling, attic) usually = ROOFING
+5. Water leaking from fixtures/pipes = PLUMBING
+6. "Not working" for electrical devices = ELECTRICAL
+7. Equipment location (attic, roof, bathroom) is secondary to the actual problem
+8. HVAC condensate leaks = PLUMBING
+9. Ground wires, bonding for metal roofs = ELECTRICAL
+
+HOMEOWNER REQUEST:
+{query}
+
+Respond with ONLY the category name in lowercase: electrical, plumbing, or roofing
